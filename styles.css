@@ -1,3 +1,7 @@
+:root {
+    --gold-line: linear-gradient(#fdc98d, #915d3a);
+}
+
 body {
     background: #eeeeee;
     margin: 0;
@@ -15,9 +19,37 @@ body {
 header {
     width: 100%;
     height: 200px;
-    background: black;
+    background: #222222;
     border-top: 5px #fdc98d solid;
     border-bottom: 5px #fdc98d solid;
+    box-sizing: border-box;
+}
+
+#logoHead {
+    color: #ffffff;
+    font-family: Constantia;
+    float: left;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 { 
+    font-size: 48px;
+    margin: 0;
+    background: var(--gold-line);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+h2 { 
+    margin: 0;
+    font-size: 32px;
+    font-weight: normal;
+    text-shadow: 1px 1px #000000;
 }
 
 nav { 
