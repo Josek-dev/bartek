@@ -19,39 +19,86 @@ body {
 header {
     width: 100%;
     height: 200px;
-    background: #222222;
+    background: #000000;
     border-top: 5px #fdc98d solid;
     border-bottom: 5px #fdc98d solid;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
 }
-
 #logoHead {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+#title {
+    width: 100%;
+    order: 1;
     color: #ffffff;
     font-family: Constantia;
-    float: left;
-    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+#logo {
+    order: 2;
+    height: 100%;
+}
+
+#logo>img {
+    padding-top: 20px;
+    height: 80%;
+    float:right;
+}
+
 h1 { 
     font-size: 48px;
     margin: 0;
-    background: var(--gold-line);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #ffffff;
 }
 
 h2 { 
     margin: 0;
     font-size: 32px;
     font-weight: normal;
-    text-shadow: 1px 1px #000000;
 }
 
+
+
 nav { 
+    order: 2;
     font-family: "Open Sans", sans-serif;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-size: 14px;
+ }
+
+ nav>ul>li {
+    list-style-type: none;
+    padding: 0 10px;
+ }
+
+ nav>ul {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+ }
+
+ nav a {
+     color: #ffffff;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-weight: 600;
+ }
+
+ nav a:hover {
+     color: #fdc98d;
+     border-bottom: #fdc98d 3px solid;
  }
