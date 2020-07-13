@@ -1,5 +1,5 @@
 :root {
-    --gold-line: linear-gradient(#fdc98d, #915d3a);
+    --gold-line: linear-gradient(-39deg, rgb(91,69,22) 2%, rgb(214,182,95) 11%, rgb(91,69,22) 12%, rgb(213,182,122) 29%, rgb(234,206,144) 31%, rgb(255,229,166) 33%, rgb(213,182,122) 36%, rgb(214,182,109) 38%, rgb(214,182,95) 40%, rgb(149,113,34) 57%, rgb(91,69,22) 58%, rgb(255,229,166) 69%, rgb(180,144,58) 70%, rgb(68,50,12) 79%, rgb(255,229,166) 94%, rgb(202,171,100) 94%, rgb(149,113,34) 95%, rgb(149,113,34) 100%);
 }
 
 body {
@@ -20,8 +20,7 @@ header {
     width: 100%;
     height: 200px;
     background: #000000;
-    border-top: 5px #fdc98d solid;
-    border-bottom: 5px #fdc98d solid;
+    border-top: 3px #fdc98d solid;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -68,37 +67,74 @@ h2 {
 }
 
 
-
-nav { 
+#menu { 
     order: 2;
     font-family: "Open Sans", sans-serif;
     color: #ffffff;
     width: 100%;
     height: 100%;
     display: flex;
-    font-size: 14px;
+    font-size: 15px;
  }
 
- nav>ul>li {
+ #menu>ul>li {
     list-style-type: none;
-    padding: 0 10px;
+    padding: 0 15px;
  }
 
- nav>ul {
+ #menu>ul {
      display: flex;
      justify-content: center;
      align-items: center;
      width: 100%;
  }
 
- nav a {
+ #menu a {
      color: #ffffff;
      text-decoration: none;
      text-transform: uppercase;
      font-weight: 600;
  }
 
- nav a:hover {
+ #menu a:hover {
      color: #fdc98d;
-     border-bottom: #fdc98d 3px solid;
  }
+
+ #topline {
+     margin-top: 1px;
+     background: var(--gold-line);
+     width: 100%;
+     height: 3px;
+ }
+
+#menu-line {
+    position: absolute;
+    left: 50%;
+    top: 120px;
+    width: 0;
+    height: 2px;
+    background: #fdc98d;
+}
+
+#info {
+    margin-top: 10px;
+    width: 100%;
+    height: 100px;
+    background: #eeeeee;
+    box-shadow: 1px 1px 20px #aaaaaa;
+    border: 1px #fff solid;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#info:hover {
+    box-shadow: 1px 1px 20px #999999;
+}
+
+#otwarcie, #kontakt, #mail {
+    width: 100%;
+    margin: auto 0;
+}
